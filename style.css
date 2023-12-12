@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    justify-items: center;
+    position: relative;
+    background-image: url("../PIXI/assets/main-bg.jpg");
+    color: #ffcc2a;
+    font-size: 16px;
+    text-transform: uppercase;
+    backdrop-filter: blur(4px);
+}
+
+canvas {
+    margin-top: 190px;
+}
+#credit-info{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-left: 20px;
+    background-image: url("../PIXI/assets/fields.png");
+    background-position: -253px -210px;
+    width: 229px;
+    height: 82px;
+}
+.credit-info-text{
+    position: relative;
+    top: 12px;
+}
+.credit-wrapper{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+}
+#player-credit{
+margin: 0 5px 0 0;
+}
+
+.wrapper {
+    position: absolute;
+    bottom: -30px;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../PIXI/assets/fields.png");
+    background-position: -833px 174px;
+    width: 1190px;
+    height: 158px;
+}
+.wrapper-left{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.bet-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../PIXI/assets/fields.png");
+    background-position: -253px -210px;
+    width: 229px;
+    height: 82px;
+    position: relative;
+    right: 20px;
+}
+
+.bet-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 12px;
+}
+
+#win-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../PIXI/assets/fields.png");
+    background-position: -253px -210px;
+    width: 229px;
+    height: 82px;
+    position: relative;
+    right: 40px;
+}
+.win-text{
+    position: relative;
+    bottom: 15px;
+}
+
+.bet-center-wrapper {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+button {
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: transparent;
+}
+
+
+#increase-button {
+    cursor: pointer;
+    background-image: url("../PIXI/assets/fields.png");
+    background-position: -27px 27px;
+    width: 24px;
+    height: 24px;
+}
+
+
+#increase-button:active {
+    transform: scale(0.9);
+}
+
+#decrease-button {
+    cursor: pointer;
+    background-image: url("../PIXI/assets/fields.png");
+    background-position: -1px 27px;
+    width: 24px;
+    height: 24px;
+}
+
+
+#decrease-button:active {
+    transform: scale(0.9);
+}
+
+
+#deposit-info {
+    display: flex;
+    align-items: center;
+}
+
+#deposit-amount {
+    font-size: 38px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+button:disabled {
+    opacity: 0.6;
+    pointer-events: none !important;
+    cursor: default;
+}
+#buttons-wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 25px;
+    right: 100px;
+}
+#maxBetButton{
+    background-image: url("../PIXI/assets/btns.png");
+    background-position: 0px -389px;
+    width: 119px;
+    height: 69px;
+    z-index: 100;
+    position: relative;
+    top: 10px;
+    left: 13px;
+}
+#maxBetButton:active{
+    transform: scale(0.95);
+}
+#maxBetButton:hover{
+    background-image: url("../PIXI/assets/btns.png");
+    background-position: -121px -389px;
+    width: 119px;
+    height: 69px;
+}
+.max-bet-icon{
+    background-image: url("../PIXI/assets/btnIcons.png");
+    background-position: -629px -391px;
+    width: 79px;
+    height: 69px;
+}
+#spinButton{
+    background-image: url("../PIXI/assets/btns.png");
+    background-position: 0 -98px;
+    width: 171px;
+    height: 96px;
+    z-index: 100;
+}
+#spinButton:active{
+    transform: scale(0.95);
+}
+#spinButton:hover{
+    background-image: url("../PIXI/assets/btns.png");
+    background-position: -173px -98px;
+    width: 171px;
+    height: 96px;
+}
+
+.spin-icon{
+    background-image: url("../PIXI/assets/btnIcons.png");
+    background-position: -859px -101px;
+    width: 80px;
+    height: 77px;
+    animation: rotate 5s infinite;
+}
+
+#autoPlayButton{
+    background-image: url("../PIXI/assets/btns.png");
+    background-position: -343px -141px;
+    width: 119px;
+    height: 69px;
+    position: relative;
+    top: 10px;
+    right: 13px;
+}
+
+#autoPlayButton:active{
+    transform: scale(0.95);
+}
+#autoPlayButton:hover{
+    background-image: url("../PIXI/assets/btns.png");
+    background-position: -343px -211px;
+    width: 119px;
+    height: 69px;
+}
+.autoplay-icon{
+    background-image: url("../PIXI/assets/btnIcons.png");
+    background-position: -520px -332px;
+    width: 70px;
+    height: 60px;
+}
+
+@keyframes rotate {
+  0%, 100%, 75%, 95% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  85% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  90% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+}
+

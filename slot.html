@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slots Game</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-left">
+            <!-- Informácie o kredite hráča -->
+            <div id="credit-info">
+                <div class="credit-info-text">Balance in EUR</div>
+                <div class="credit-wrapper">
+                    <span id="player-credit">1000</span>
+                </div>
+            </div>
+
+            <!-- Informácie o vklade -->
+            <div class="bet-wrapper">
+                <div class="bet-header">Bet in Eur</div>
+                <div class="bet-center-wrapper">
+                    <button id="decrease-button" onclick="decreaseCredit()"></button>
+                    <div id="deposit-info">
+                        <span id="deposit-amount">1</span>
+                    </div>
+                    <button id="increase-button" onclick="increaseCredit()"></button>
+                </div>
+            </div>
+            <div id="win-wrapper">
+                <div class="win-text">Win in Eur</div>
+            </div>
+        </div>
+        <div id="buttons-wrapper">
+            <button id="maxBetButton"><div class="max-bet-icon"></div></button>
+            <button id="spinButton"><div class="spin-icon"></div></button>
+            <button id="autoPlayButton"><div class="autoplay-icon"></div></button>
+        </div>
+    </div>
+    <script src="https://pixijs.download/v5.3.10/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="app.js"></script>
+    <script src="asset.js"></script>
+    <script src="credit.js"></script>
+    <script src="combinations.js"></script>
+    <script src="tween.js"></script>
+</body>
+
+</html>
